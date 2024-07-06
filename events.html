@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Events
+         An event is an action that occurs as per the user's instruction as input and gives the output in response. We can consider different types of inputs, such as mouse clicks, button presses, and when users press tab and text box change. -->
+<h1>Events</h1>
+
+<button id="myButton">Click ME!</button>
+
+
+
+<!-- script tag is used to target the html tag or its connect to the javascript files -->
+
+<script>
+    var button=document.getElementById('myButton')
+
+    // define event handle function
+ function handleClick(){
+    alert("button clicked")
+ }
+
+    // adding Event listener
+
+    // we can run the click button multiple time
+    button.addEventListener('click', handleClick)
+
+    // we can run the click button one time 
+    // button.addEventListener("click",handleClick,{once:true})
+    
+
+    // To avoid memory leakage 
+    // we can remove after 3 secs
+setTimeout(function(){
+   button.removeEventListener('click',handleClick) 
+},3000)
+
+</script>
+</body>
+</html>
