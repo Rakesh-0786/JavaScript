@@ -1,0 +1,44 @@
+<!-- The browser Object Model (BOM) allows javaScript to talk to the browser. -->
+
+<!-- The window.location object can be used to get the current page address (URL) and to redirect the browser to a new page. -->
+
+<!-- Window Location
+The window.location object can be written without the window prefix.
+
+Some examples:
+
+window.location.href returns the href (URL) of the current page
+window.location.hostname returns the domain name of the web host
+window.location.pathname returns the path and filename of the current page
+window.location.protocol returns the web protocol used (http: or https:)
+window.location.assign() loads a new document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The Window .location object</h2>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML= navigator.onLine;"The full URL of this page is: <br>"+window.location.port;
+
+    </script>
+</body>
+</html>
+
+<!-- what is the difference between http and https?
+ChatGPT
+The main difference between HTTP and HTTPS is that HTTPS provides secure communication over the network by encrypting the data exchanged between the client and server, while HTTP does not offer such encryption. Here’s a detailed comparison of the two:
+
+1. Overview
+HTTP (HyperText Transfer Protocol):
+
+A protocol used for transferring hypertext (web pages) over the internet. It operates over TCP/IP and is designed for communication between web browsers and web servers.
+Port: Uses port 80 by default.
+HTTPS (HyperText Transfer Protocol Secure):
+
+An extension of HTTP that incorporates encryption for secure communication over the internet. It combines HTTP with SSL/TLS (Secure Sockets Layer / Transport Layer Security).
+Port: Uses port 443 by default. -->
