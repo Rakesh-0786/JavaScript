@@ -1,0 +1,2 @@
+typeof(a);
+// typeof(b);
