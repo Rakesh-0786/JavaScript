@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 3</title>
+</head>
+<body>
+    <h1>hello guys</h1>
+    <p id="js"></p>
+    <!-- we can use the event on button tag -->
+    <button onclick="hey()" id="jss">Submit</button>
+    <script>
+        // we can  add event on the whole webpage with the help of addEventListener
+        // eventlistener in this tutorials used are 
+        // click,dblclick,mouse
+        document.addEventListener("dblclick",hey);
+        function hey(){
+
+        document.getElementById("js").innerText="Hello Everyone This is Rakesh Kumar";
+        }
+        function hey(){
+            document.getElementById("jss").innerText="Namaste.";
+            document.getElementById("jss").style.color="red";
+            document.getElementById("jss").style.backgroundColor="black";
+            document.getElementById("jss").style.padding="26px";
+            document.getElementById("jss").style.border="2px solid yellow";
+        }
+    </script>
+</body>
+</html>

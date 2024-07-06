@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Dom part 2</title>
+</head>
+<body>
+    <!--  we can create the html element with the help of Dom javascript -->
+
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <script>
+
+        // append Child
+        let title=document.createElement("h1");
+        title.className="pwSkills";
+        title.style.fontSize="25px";
+        title.textContent="hello this is rakesh kumar";
+        console.log(title);
+        document.body.appendChild(title);
+
+        // Remove Child
+        let ul =document.querySelector("ul");
+        console.log(ul);
+        let Lists=document.querySelectorAll("li");
+        console.log(Lists);
+        for(Lists of Lists){
+            ul.removeChild(Lists);
+        }
+    </script>
+</body>
+</html>
