@@ -1,0 +1,35 @@
+<!-- // AJAX is a developer's  dream, because you can:
+// Read data from a web server-after the page has loaded.
+// Update a web page without reloading the page
+//  Send data to a web server- in the background.
+
+
+// What is web- server?
+// A web server is software and hardware that uses HTTP(hypertext Transfer Protocol)
+// and other protocols to respond to client requests made over the World Wide Web. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <h2>THe XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+
+    <Script>
+        function loadDoc(){
+            const xhttp=new XMLHttpRequest();
+            xhttp.onload=function(){
+                document.getElementById("demo").innerHTML=this.responseText;
+            }
+            xhttp.open('GET', "ajax_info.txt");
+            xhttp.send();
+        }
+    </Script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- THe keystone of Ajax is the XMLHttpRequest object.
+ 
+1.Create an XMLHttpRequest object
+2.Define a callback function
+3.Open the XMLHttpRequest object
+4.Send a Request to a server
+
+
+The XMLHttpRequest Object
+All modern browsers support the XMLHttpRequest object.
+
+The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+
+Create an XMLHttpRequest Object
+All modern browsers (Chrome, Firefox, IE, Edge, Safari, Opera) have a built-in XMLHttpRequest object.
+
+Syntax for creating an XMLHttpRequest object:
+
+variable = new XMLHttpRequest();
+
+
+Example:
+// Create an XMLHttpRequest object
+const xhttp = new XMLHttpRequest();
+
+// Define a callback function
+xhttp.onload = function() {
+  // Here you can use the Data
+}
+
+// Send a request
+xhttp.open("GET", "ajax_info.txt");
+xhttp.send();
+
+-->
+
